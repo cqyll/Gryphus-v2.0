@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Gryphus">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/settingsProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="34sp"
+        android:text="Profile" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:textSize="34sp"
+        android:layout_below="@id/settingsProfile"
+        android:text="Your UserName" />
+
+    <Button
+        android:id="@+id/chgUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:onClick="changeUser"
+
+        android:layout_below="@id/settingsProfile"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/userName"
+        android:text="Change" />
+
+
+    <TextView
+        android:id="@+id/passWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:textSize="34sp"
+
+        android:layout_below="@id/userName"
+
+        android:text="Your Password" />
+
+
+
+    <Button
+        android:id="@+id/chgPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+
+        android:onClick="changePass"
+
+        android:layout_below="@id/chgUser"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/passWord"
+        android:text="Change" />
+</RelativeLayout>

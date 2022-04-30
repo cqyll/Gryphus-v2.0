@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Gryphus">
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Setting"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Notification"
+        android:textSize="34sp" />
+
+    <Switch
+        android:id="@+id/notiSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings"
+        android:layout_alignBaseline="@id/notification"
+        android:layout_alignTop="@id/notification"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/notification"
+        android:text="On"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification"
+        android:layout_alignLeft="@id/notification"
+        android:layout_marginTop="60dp"
+        android:text="Theme"
+        android:textSize="34sp" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notiSwitch"
+        android:layout_alignBaseline="@id/theme"
+        android:layout_alignLeft="@id/notiSwitch"
+        android:layout_alignTop="@id/theme"
+        android:layout_toRightOf="@id/theme"
+        android:text="On"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme"
+        android:layout_alignLeft="@id/notification"
+        android:layout_marginTop="60dp"
+        android:text="Profile"
+        android:textSize="34sp" />
+</RelativeLayout>

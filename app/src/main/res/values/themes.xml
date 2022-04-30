@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="Theme.Gryphus" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/mainBack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/mainText</item>
+        <item name="android:windowBackground">@color/mainBack</item>
+
+    </style>
+
+    <style name="Theme.Gryphus.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
